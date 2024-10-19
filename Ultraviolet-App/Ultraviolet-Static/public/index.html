@@ -1,0 +1,131 @@
+<html>
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+   <link rel="stylesheet" href="../css/index.css">
+   <link rel="icon" type="image/x-icon" href="https://www.google.com/favicon.ico">
+   <script src="/particles.js"></script>
+   <script src="/app.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   <title>calculator - Google Search</title>
+</head>
+<body>
+
+   <div id="particles-js"></div>
+   
+   <div class="navbar">
+    <div class="logo">
+        <span>Szvy Central</span>
+    </div>
+    <div class="nav-right">
+        <a href="/index.html"><i class="fa-solid fa-house"></i> Home</a>
+        <a href="/pages/pop.html"><i class="fas fa-fire"></i> Popular</a>
+        <a href="/pages/gxmez.html"><i class="fas fa-gamepad"></i> Games</a>
+        <a href="/pages/4pps.html"><i class="fas fa-th-large"></i> Apps</a>
+        <a href="/pages/movies.html"><i class="fas fa-film"></i>  Movies</a>
+        <a href="/pages/settings.html"><i class="fa-solid fa-gear"></i> Settings</a>
+        <a href="/extra/discord.html"><i class="fa-brands fa-discord"></i> More Links</a>
+        <a href="/pages/extra.html"><i class="fas fa-plus"></i> Extra</a>
+    </div>
+</div>
+   <div id="content">
+      <h1 id="title">Szvy Central V2</h1>
+
+      <form id="uv-form">
+        <input id="uv-search-engine" value="https://www.google.com/search?q=%s" type="hidden"> 
+        <input id="uv-address" type="text" placeholder="Search freely with Szvy Central..." class="form__input" autocomplete="off">
+  
+         
+         <p class="smallahhtext">Quick Links</p>
+         <div class="quicklink-container" id="quicklink-container">
+            <a class="quicklink-button" href="embed.html#https://www.google.com">
+               <img src="/assets/google.png" alt="Google">
+               <p>Google</p>
+            </a>
+
+            <a class="quicklink-button" href="embed.html#https://now.gg">
+               <img src="/assets/nowwwwwwww.png" alt="Now.gg">
+               <p>Now.GG</p>
+            </a>
+
+            <a class="quicklink-button" href="embed.html#https://play.geforcenow.com/mall/">
+                <img src="/assets/geforce.png" alt="Geforce Now">
+                <p>Geforce Now</p>
+             </a>
+
+            <a class="quicklink-button" href="embed.html#https://www.tiktok.com">
+               <img src="/assets/tiktok.png" alt="Tiktok">
+               <p>Tiktok</p>
+            </a>
+
+            <a class="quicklink-button" id="custom-site-container">
+               <img src="/assets/plus.png" alt="Add Custom Site">
+               <p>Add Site</p>
+            </a>
+         </div>
+
+         <div class="desc left-margin">
+            <p id="uv-error"></p>
+            <pre id="uv-error-code"></pre>
+         </div>
+
+         <script src="baremux/index.js" defer></script>
+         <script src="epoxy/index.js" defer></script>
+         <script src="uv/uv.bundle.js" defer></script>
+         <script src="uv/uv.config.js" defer></script>
+         <script src="register-sw.js" defer></script>
+         <script src="search.js" defer></script>
+         <script src="index.js" defer></script>
+      <script>
+         function loadCustomLinks() {
+            var quicklinkContainer = document.getElementById('quicklink-container');
+            var savedLinks = JSON.parse(localStorage.getItem('customLinks')) || [];
+
+            savedLinks.forEach(function(link) {
+               addCustomLinkToUI(link.url, link.image, link.name);
+            });
+         }
+         function addCustomLinkToUI(customUrl, customImage, customName) {
+            var quicklinkContainer = document.getElementById('quicklink-container');
+            var newQuicklink = document.createElement('a');
+            newQuicklink.className = 'quicklink-button';
+            newQuicklink.href = 'embed.html#' + customUrl;
+            newQuicklink.innerHTML = '<img src="' + customImage + '" alt="' + customName + '"><p>' + customName + '</p>';
+            quicklinkContainer.insertBefore(newQuicklink, document.getElementById('custom-site-container'));
+         }
+         document.getElementById('custom-site-container').addEventListener('click', function() {
+            var customUrl = prompt("Enter the URL (https required):");
+            if (!customUrl) {
+               alert("URL is required!");
+               return;
+            }
+
+            var customImage = prompt("Enter the image URL for the site:");
+            if (!customImage) {
+               alert("Image URL is required!");
+               return;
+            }
+
+            var customName = prompt("Enter the name for the site:");
+            if (!customName) {
+               alert("Site name is required!");
+               return;
+            }
+
+            var newLink = {
+               url: customUrl,
+               image: customImage,
+               name: customName
+            };
+            var savedLinks = JSON.parse(localStorage.getItem('customLinks')) || [];
+            savedLinks.push(newLink);
+            localStorage.setItem('customLinks', JSON.stringify(savedLinks));
+            addCustomLinkToUI(customUrl, customImage, customName);
+         });
+         window.onload = function() {
+            loadCustomLinks();
+         };
+      </script>
+   </div>
+</body>
+</html>

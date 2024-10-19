@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, minimal-ui, shrink-to-fit=yes">
+    <title>Proxy Embedder</title>
+    <link href="/style.css" rel="stylesheet" type="text/css" />
+    <link href="/bounce.css" rel="stylesheet" type="text/css" />
+    <link rel="manifest" href="manifest.json"/>
+    <link rel="icon" href="/images/logo.gif">
+    <meta property="og:title" content="szvy central goated embedder">
+    <meta name="theme-color" content="#00ffa6">
+    <meta name="msapplication-TileColor" content="#00ffa6">
+    <meta property="og:image" content="/images/logo.gif">
+    <meta name="description" content="Proxy Embedder">
+    <meta property="og:description" content="Proxy Embedder">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200..900;1,200..900&family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <div id="particles-js"></div>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css'></script>
+    <script src='https://code.jquery.com/jquery-1.11.1.min.js'></script>
+    <script src="/script.js"></script>
+
+    <div id="login-box">
+      <div class="logo">
+      </div>
+      <div class="controls">
+        <h2>Loading...</h2>
+        <h5>Proxy is launching...</h5>
+      </div>
+    </div>
+
+    <style>
+      p {
+        color: white;
+        font-family: 'Roboto', sans-serif;
+      }
+
+      h2 {
+        color: white;
+        font-family: 'Reddit Sans', sans-serif;
+      }
+
+      h5 {
+        color: white;
+        font-family: 'Roboto', sans-serif;
+      }
+
+      body {
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+      }
+
+      a {
+        text-align: left;
+      }
+
+      body, html {
+        height: 100%;
+        background-repeat: no-repeat;
+        background:black;
+        position: relative;
+      }
+
+      #login-box {
+        position: absolute;
+        top: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+        min-width: 350px;
+        margin: 0 auto;
+        border: 1px solid black;
+        background: rgba(48, 46, 45, 1);
+        min-height: 250px;
+        padding: 20px;
+        z-index: 9999;
+      }
+
+      #login-box .logo .logo-caption {
+        font-family: 'Arial', sans-serif;
+        color: white;
+        text-align: center;
+        margin-bottom: 0px;
+      }
+
+      #login-box .logo .tweak {
+        color: #b1c900;
+      }
+
+      #login-box .controls {
+        padding-top: 30px;
+      }
+
+      #login-box .controls input {
+        border-radius: 0px;
+        background: rgb(98, 96, 96);
+        border: 0px;
+        color: white;
+      }
+
+      #login-box .controls input:focus {
+        box-shadow: none;
+      }
+
+      #login-box .controls input:first-child {
+        border-top-left-radius: 2px;
+        border-top-right-radius: 2px;
+      }
+
+      #login-box .controls input:last-child {
+        border-bottom-left-radius: 2px;
+        border-bottom-right-radius: 2px;
+      }
+
+      #login-box button.btn-custom {
+        border-radius: 2px;
+        margin-top: 8px;
+        background:#b1c900;
+        border-color: rgba(48, 46, 45, 1);
+        color: white;
+      }
+
+      #login-box button.btn-custom:hover {
+        -webkit-transition: all 500ms ease;
+        -moz-transition: all 500ms ease;
+        -ms-transition: all 500ms ease;
+        -o-transition: all 500ms ease;
+        transition: all 500ms ease;
+        background: rgba(48, 46, 45, 1);
+        border-color: #b1c900;
+      }
+
+      #particles-js {
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: 50% 50%;
+        position: fixed;
+        top: 0px;
+        z-index: 1;
+      }
+
+      #h2 {
+        color: white;
+      }
+    </style>
+
+    <script src="uv/uv.bundle.js"></script>
+    <script src="uv/uv.config.js"></script>
+    <script src="register-sw.js"></script>
+    <script src="embed.js"></script>
+  </body>
+</html>
