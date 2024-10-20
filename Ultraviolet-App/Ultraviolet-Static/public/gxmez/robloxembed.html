@@ -36,43 +36,17 @@
         <h1>Loading...</h1>
     </div>
 
-     <div class="navbar">
-    <div class="logo">
-        <span>Szvy Central</span>
-    </div>
-    <div class="nav-right">
-        <a href="../index.html"><i class="fa-solid fa-house"></i> Home</a>
-        <a href="../pages/pop.html"><i class="fas fa-fire"></i> Popular</a>
-        <a href="../pages/gxmez.html"><i class="fas fa-gamepad"></i> Games</a>
-        <a href="../pages/4pps.html"><i class="fas fa-th-large"></i> Apps</a>
-        <a href="../pages/movies.html"><i class="fas fa-film"></i>  Movies</a>
-            <a href="../pages/settings.html"><i class="fa-solid fa-gear"></i> Settings</a>
-            <a href="../extra/discord.html"><i class="fa-brands fa-discord"></i> More Links</a>
-        <a href="../pages/extra.html"><i class="fas fa-plus"></i> Extra</a>
-    </div>
-</div>
-    <h1 id="title">Roblox</h1>
-    <div class="buttons-here">
-        <button id="fullscreen">Fullscreen</button>
-        <button id="allb" onclick="document.getElementById('gameframe').src = document.getElementById('gameframe').src;">Refresh</button>
-        <button id="allb" onclick="if (window.pJSDom && window.pJSDom.length > 0) { window.pJSDom.forEach(particleInstance => { particleInstance.pJS.fn.vendors.destroypJS(); }); window.pJSDom = [];}">Performance Mode</button>
-    </div>
-        <iframe id="gameframe" class="gameframe" id="gameframe" class="gameframe" src="robloxembed.html"></iframe>
+    <h1 id="title">Select a server</h1>
 </body>
 
-<script>
-    document.getElementById('fullscreen').addEventListener('click', function() {
-        var iframe = document.getElementById('gameframe');
-        if (iframe.requestFullscreen) {
-            iframe.requestFullscreen();
-        } else if (iframe.mozRequestFullScreen) {
-            iframe.mozRequestFullScreen();
-        } else if (iframe.webkitRequestFullscreen) { 
-            iframe.webkitRequestFullscreen();
-        } else if (iframe.msRequestFullscreen) {
-            iframe.msRequestFullscreen();
-        }
-    });
-</script>
+<div class="buttons-here">
+<button id="allb" onclick="window.location.href='https://shouldvebeenanoglilbro.global.ssl.fastly.net'">Server 1</button>
+<button id="allb" onclick="window.location.href='https://chromokopia.global.ssl.fastly.net'">Server 2</button>
+<button id="allb" onclick="window.location.href='https://learningcentralforstudents.global.ssl.fastly.net'">Server 3</button>
+<button id="allb" onclick="window.location.href='https://now-learning-gg.global.ssl.fastly.net'">Server 4</button>
+<button id="allb" onclick="window.location.href='https://robomath.global.ssl.fastly.net'">Server 5</button>
+<button id="allb" onclick="window.location.href='https://thesizzleroblox.global.ssl.fastly.net'">Server 6</button>
+<button id="allb" onclick="window.location.href='../embed.html#https://nowgg.cloud'">Server 7 (proxied)</button>
+</div>
 
 </html>
