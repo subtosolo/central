@@ -322,9 +322,12 @@ label[for="faviconDropdown"] {
   padding: 10px 20px;
   background-color: #1c1c1c;
   position: fixed;
-  width: 100%;
+  width: 85%;
   top: 0;
+  left: 6%;
   z-index: 9999;
+  border-bottom-left-radius: 17px;
+  border-bottom-right-radius: 17px;
   font-family: 'notitle';
 }
 
@@ -354,12 +357,12 @@ label[for="faviconDropdown"] {
   margin-left: 20px;
   display: flex;
   align-items: center;
-  font-size: 18px;
+  font-size: 23px;
   transition: all 0.2s ease-in-out;
 }
 
 .navbar .nav-right a i {
-  margin-right: 5px;
+  margin-right: 8px;
 }
 
 .navbar .nav-right a:hover {
