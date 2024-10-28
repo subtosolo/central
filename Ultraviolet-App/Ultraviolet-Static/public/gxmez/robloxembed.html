@@ -26,6 +26,7 @@
     <script src="../js/usesettings.js"></script>
     <script src="/particles.js"></script>
     <script src="/app.js"></script>
+
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
@@ -36,19 +37,37 @@
         <h1>Loading...</h1>
     </div>
 
-    <h1 id="title">Select a server</h1>
+    <h1 id="title">Roblox Link Generator</h1>
 </body>
 
 <div class="buttons-here">
-    <button id="allb" onclick="window.open('https://f1isabitch.global.ssl.fastly.net', '_blank')">Server 1</button>
-    <button id="allb" onclick="window.open('https://ubgroblox.global.ssl.fastly.net', '_blank')">Server 2</button>
-    <button id="allb" onclick="window.open('https://mangomangomangomango.global.ssl.fastly.net', '_blank')">Server 3</button>
-    <button id="allb" onclick="window.open('https://nowggisgay.global.ssl.fastly.net', '_blank')">Server 4</button>
-    <button id="allb" onclick="window.open('https://realfunlearning-uk.global.ssl.fastly.net', '_blank')">Server 5</button>
-    <button id="allb" onclick="window.open('https://school-safety-for-students.global.ssl.fastly.net', '_blank')">Server 6</button>
-    <button id="allb" onclick="window.open('https://ubgismathingalloverme.global.ssl.fastly.net', '_blank')">Server 7</button>
-    <button id="allb" onclick="window.open('../embed.html#https://roblox-unblocked.global.ssl.fastly.net', '_blank')">Server 8 (proxied)</button>
+    <button onclick="openIframeInNewTab()" id="allb">Generate</button>
 </div>
+
+<script>
+    function openIframeInNewTab() {
+        const links = [
+            'https://szvysskibidiblox.global.ssl.fastly.net',
+            'https://supercoolgrammar.global.ssl.fastly.net',
+            'https://sumenglish.global.ssl.fastly.net',
+            'https://skibiditoiletrizzlers.global.ssl.fastly.net',
+            'https://skibidirizzzzzzer.global.ssl.fastly.net',
+            'https://sigmassssss.global.ssl.fastly.net',
+            'https://mathfuncdnusers.global.ssl.fastly.net',
+            'https://mathdomains.global.ssl.fastly.net',
+            'https://learnaboutslope.global.ssl.fastly.net',
+            'https://khaningmyacademy.global.ssl.fastly.net',
+            'https://justdoyourmath.global.ssl.fastly.net',
+            'https://genuineamountsofrizz.global.ssl.fastly.net',
+            'https://funsigmamath.global.ssl.fastly.net',
+            'https://funmathwebsitesforallofthestudentsaroundfrfr.global.ssl.fastly.net',
+            'https://bloxflipwarrior.global.ssl.fastly.net'
+        ];
+        
+        const randomLink = links[Math.floor(Math.random() * links.length)];
+        window.open(randomLink, '_blank');
+    }
+</script>
 
 
 </html>
