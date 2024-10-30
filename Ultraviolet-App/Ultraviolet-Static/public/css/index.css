@@ -591,6 +591,7 @@ label[for="faviconDropdown"] {
   flex: 1;
   margin-right: 10px;
   max-width: 300px;
+  justify-content: center;
 }
 
 @font-face {
