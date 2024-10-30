@@ -58,7 +58,7 @@ body {
   outline: 2px solid rgb(88, 101, 242);
 }
 
-#allb, #fullscreen, #abcloak, #discord, #confirmtab, #setkeybind {
+#allb, #abcloak, #discord, #confirmtab, #setkeybind {
   font-family: notitle;
   font-size: 1.2em;
   padding: 10px 20px;
@@ -73,14 +73,14 @@ body {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-#allb:hover, #fullscreen:hover, #abcloak:hover, #confirmtab:hover, #setkeybind:hover {
+#allb:hover, #abcloak:hover, #confirmtab:hover, #setkeybind:hover {
   border: 4px solid white;
   box-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white;
   transition: all .2s ease-in-out; 
   outline: 2px solid transparent;
 }
 
-#allb:disabled, #fullscreen:disabled, #abcloak:disabled, #confirmtab:disabled, #setkeybind:disabled {
+#allb:disabled, #abcloak:disabled, #confirmtab:disabled, #setkeybind:disabled {
   cursor: not-allowed;
   font-family: notitle;
   font-size: 1.2em;
@@ -95,7 +95,7 @@ body {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-#allb:hover:disabled, #fullscreen:hover:disabled, #abcloak:hover:disabled, #confirmtab:hover:disabled, #setkeybind:hover:disabled {
+#allb:hover:disabled, #abcloak:hover:disabled, #confirmtab:hover:disabled, #setkeybind:hover:disabled {
   cursor: not-allowed;
 }
 
@@ -120,6 +120,44 @@ body {
   z-index: 9998;
  }
 
+ .iframeiconshere {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+  margin-top: -75px;
+  z-index: 9999;
+  position: sticky;
+}
+
+#iframeicons, #fullscreen {
+  margin: 0 10px;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+  transition: all ease-in-out 0.2s;
+  background-color: #242424;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+@media (min-width: 768px) {
+  #iframeicons, #fullscreen {
+    padding: 12px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #iframeicons, #fullscreen {
+    padding: 14px;
+  }
+}
+
+
+#iframeicons:hover, #fullscreen:hover {
+  color: #007bff;
+}
+
 #splash-text {
   color: white;
   font-family: notitle;
@@ -128,12 +166,15 @@ body {
 }
 
 .gameframe {
-  width: 100%;
-  height: 80vh;
-  border-radius: 20px;
-  border-color: white;
-  z-index: 9998;
+  width: 60%;
+  height: 75vh;
+  border-radius: 15px;
   position: relative;
+  margin: 85px auto;
+  display: block;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  z-index: 1;
+  flex: 2;
 }
 
 .scpframe {
@@ -537,6 +578,19 @@ label[for="faviconDropdown"] {
   margin-top: -10px;
   gap: 8px;
   font-family: 'notitle';
+}
+
+#adplusiframe {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 20px 0;
+}
+
+#adarea {
+  flex: 1;
+  margin-right: 10px;
+  max-width: 300px;
 }
 
 @font-face {
