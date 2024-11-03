@@ -598,6 +598,12 @@ label[for="faviconDropdown"] {
   position: absolute;
 }
 
+#bottomad {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
 @font-face {
   font-family: notitle;
   src: url(../assets/RedditSans-Medium.ttf);
