@@ -5,6 +5,7 @@ import { publicPath } from "ultraviolet-static";
 import { uvPath } from "@titaniumnetwork-dev/ultraviolet";
 import { join } from "node:path";
 import { hostname } from "node:os";
+import cors from "cors";
 
 const bare = createBareServer("/bare/");
 const app = express();
@@ -20,6 +21,12 @@ app.use((req, res) => {
   res.status(404);
   res.sendFile(join(publicPath, "404.html"));
 });
+
+app.use(cors({
+  origin: "*", // Allow all origins
+  methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+  allowedHeaders: "Content-Type,Authorization" // Adjust headers as needed
+}));
 
 const server = createServer();
 
