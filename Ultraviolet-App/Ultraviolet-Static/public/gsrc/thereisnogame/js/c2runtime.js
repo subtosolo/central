@@ -21197,10 +21197,10 @@ cr.plugins_.Sprite = function(runtime)
 				frameobj.datauri = "";		// generated on demand and cached
 				frameobj.getDataUri = frame_getDataUri;
 				uv = {};
-				uv.left = 0;
-				uv.top = 0;
-				uv.right = 1;
-				uv.bottom = 1;
+				left = 0;
+				top = 0;
+				right = 1;
+				bottom = 1;
 				frameobj.sheetTex = uv;
 				frameobj.webGL_texture = null;
 				wt = this.runtime.findWaitingTexture(frame[0]);
@@ -21362,10 +21362,10 @@ cr.plugins_.Sprite = function(runtime)
 				{
 					maintex = frame.texture_img;
 					uv = frame.sheetTex;
-					uv.left = frame.offx / maintex.width;
-					uv.top = frame.offy / maintex.height;
-					uv.right = (frame.offx + frame.width) / maintex.width;
-					uv.bottom = (frame.offy + frame.height) / maintex.height;
+					left = frame.offx / maintex.width;
+					top = frame.offy / maintex.height;
+					right = (frame.offx + frame.width) / maintex.width;
+					bottom = (frame.offy + frame.height) / maintex.height;
 					if (frame.offx === 0 && frame.offy === 0 && frame.width === maintex.width && frame.height === maintex.height)
 					{
 						frame.spritesheeted = false;

@@ -10,11 +10,11 @@ import cors from "cors";
 const bare = createBareServer("/bare/");
 const app = express();
 
-// Load our publicPath first and prioritize it over UV.
+// Load our publicPath first and prioritize it over 
 app.use(express.static(publicPath));
 // Load vendor files last.
-// The vendor's uv.config.js won't conflict with our uv.config.js inside the publicPath directory.
-app.use("/uv/", express.static(uvPath));
+// The vendor's config.js won't conflict with our config.js inside the publicPath directory.
+app.use("/szvy/", express.static(uvPath));
 
 // Error for everything else
 app.use((req, res) => {

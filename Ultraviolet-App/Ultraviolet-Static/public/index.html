@@ -23,6 +23,7 @@
         <a href="/pages/gxmez.html"><i class="fas fa-gamepad"></i></a>
         <a href="/pages/4pps.html"><i class="fas fa-border-all"></i></a>
         <a href="/pages/movies.html"><i class="fas fa-film"></i> </a>
+        <a href="/pages/ai.html"><i class="fa-solid fa-robot"></i> </a>
         <a href="/pages/settings.html"><i class="fa-solid fa-gear"></i></a>
         <a href="/pages/extra.html"><i class="fas fa-plus"></i></a>
         <a href="/extra/discord.html"><i class="fa-brands fa-discord"></i></a>
@@ -69,13 +70,40 @@
             <pre id="uv-error-code"></pre>
          </div>
 
-         <script src="baremux/index.js" defer></script>
-         <script src="epoxy/index.js" defer></script>
-         <script src="uv/uv.bundle.js" defer></script>
-         <script src="uv/uv.config.js" defer></script>
-         <script src="register-sw.js" defer></script>
-         <script src="search.js" defer></script>
-         <script src="index.js" defer></script>
+         <script src="/szvy/uv.bundle.js" defer></script>
+         <script src="/szvy/uv.config.js?cdn" defer></script>
+         <script>
+           const form = document.querySelector("#uv-form");
+     const input = document.querySelector("#uv-address");
+     
+     document.addEventListener("DOMContentLoaded", function () {
+       form.addEventListener("submit", async (event) => {
+         event.preventDefault();
+         window.navigator.serviceWorker
+           .register("/szvy/sw.js", {
+             scope: __uv$config.prefix,
+           })
+           .then(() => {
+             let url = input.value.trim();
+             if (!isUrl(url)) url = "https://www.google.com/search?hl=en-us&q=" + url;
+             else if (!(url.startsWith("https://") || url.startsWith("http://")))
+               url = "http://" + url;
+             sessionStorage.setItem("encodedUrl", __uv$config.encodeUrl(url));
+             location.href = "math.html";
+           });
+       });
+     });
+     
+     function isUrl(val = "") {
+       if (
+         /^http(s?):\/\//.test(val) ||
+         (val.includes(".") && val.slice(0, 1) !== " ")
+       )
+         return true;
+       return false;
+     }
+     
+         </script>
       <script>
          function loadCustomLinks() {
             var quicklinkContainer = document.getElementById('quicklink-container');

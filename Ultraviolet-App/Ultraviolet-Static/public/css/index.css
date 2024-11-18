@@ -372,6 +372,57 @@ label[for="faviconDropdown"] {
   font-family: 'notitle';
 }
 
+.navbar-rizz {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #1c1c1c;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  font-family: 'notitle';
+}
+.navbar-rizz .logo {
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.navbar-rizz .logo i {
+  margin-right: 8px;
+  margin-left: 8px;
+  color: #007bff;
+}
+
+.navbar-rizz .nav-right {
+  display: flex;
+  align-items: center;
+  margin-right: 65px; 
+}
+
+.navbar-rizz .nav-right a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  font-size: 23px;
+  transition: all 0.2s ease-in-out;
+}
+
+.navbar-rizz .nav-right a i {
+  margin-right: 8px;
+}
+
+.navbar-rizz .nav-right a:hover {
+  color: #007bff;
+}
+
 .navbar .logo {
   font-size: 24px;
   font-weight: bold;
@@ -604,6 +655,65 @@ label[for="faviconDropdown"] {
   margin-top: 20px;
 }
 
+#searchBar-rizz {
+  width: calc(70vw - 67.5px);
+  padding: 10px 10px;
+  display: block;
+  font-size: 18px;
+  height: 10%;
+  z-index: 9998;
+  top: 0;
+  color: #ffffff;
+  background-color: #1c1c1c;
+  border: 2px solid #545454;
+  border-radius: 8px;
+  font-family: notitle;
+  text-align: center;
+  position: relative;
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+#searchBar-rizz::placeholder {
+  color: #bbbbbb;
+  font-family: notitle;
+  font-size: 16px;
+  position: relative;
+}
+
+#searchBar-rizz:focus {
+  outline: none;
+  border-color: white;
+  box-shadow: 0 0 10px white, 0 0 20px white;
+  position: relative;
+}
+#uv-form{
+  padding: 3px;
+  height: 0;
+  top: .2%;
+}
+
+.close-icon {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+
+.close-icon:hover {
+  background-color: red;
+  color: white;
+}
 @font-face {
   font-family: notitle;
   src: url(../assets/RedditSans-Medium.ttf);
