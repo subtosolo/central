@@ -1,0 +1,2 @@
+const 'banned' {
+  "milo",}
