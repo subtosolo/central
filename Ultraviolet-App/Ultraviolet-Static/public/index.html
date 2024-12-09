@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
    <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -6,14 +7,16 @@
    <link rel="icon" type="image/x-icon" href="https://www.google.com/favicon.ico">
    <script src="/particles.js"></script>
    <script src="/app.js"></script>
-
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
    <title>calculator - Google Search</title>
 </head>
 <body>
-
    <div id="particles-js"></div>
-   
+   <div class="announcement-modal" id="announcement-banner" style="display:none;">
+     <div class="close-icon" id="announcement-close">&times;</div>
+     <i class="fa-solid fa-bullhorn fa-2xl" style="margin-bottom:10px;"></i>
+     <div class="announcement-text" style="margin-top: 20px;">new update! most now.gg games are fixed, minecraft is fixed, and the szvy central minecraft server is out now! just go to multiplayer under the minecraft on this site!</div>
+   </div>
    <div class="navbar">
     <div class="logo">
         <span>Szvy Central</span>
@@ -22,8 +25,8 @@
         <a href="/index.html"><i class="fa-solid fa-house"></i></a>
         <a href="/pages/gxmez.html"><i class="fas fa-gamepad"></i></a>
         <a href="/pages/4pps.html"><i class="fas fa-border-all"></i></a>
-        <a href="/pages/movies.html"><i class="fas fa-film"></i> </a>
-        <a href="/pages/ai.html"><i class="fa-solid fa-robot"></i> </a>
+        <a href="/pages/movies.html"><i class="fas fa-film"></i></a>
+        <a href="/pages/ai.html"><i class="fa-solid fa-robot"></i></a>
         <a href="/pages/settings.html"><i class="fa-solid fa-gear"></i></a>
         <a href="/pages/extra.html"><i class="fas fa-plus"></i></a>
         <a href="/extra/discord.html"><i class="fa-brands fa-discord"></i></a>
@@ -31,84 +34,78 @@
 </div>
    <div id="content">
       <h1 id="title">Szvy Central V2</h1>
-
       <form id="uv-form">
         <input id="uv-search-engine" value="https://www.google.com/search?q=%s" type="hidden"> 
         <input id="uv-address" type="text" placeholder="Search freely with Szvy Central..." class="form__input" autocomplete="off">
-  
-         
          <p class="smallahhtext">Quick Links</p>
          <div class="quicklink-container" id="quicklink-container">
             <a class="quicklink-button" href="embed.html#https://www.google.com">
                <img src="/assets/google.png" alt="Google">
                <p>Google</p>
             </a>
-
             <a class="quicklink-button" href="embed.html#https://ngg.frogiee.one/hub">
                <img src="/assets/ngglol.png" alt="nowgg.lol">
                <p>nowgg.lol</p>
             </a>
-
             <a class="quicklink-button" href="embed.html#https://play.geforcenow.com/mall/">
                 <img src="/assets/geforce.png" alt="Geforce Now">
                 <p>Geforce Now</p>
              </a>
-
             <a class="quicklink-button" href="embed.html#https://www.tiktok.com">
                <img src="/assets/tiktok.png" alt="Tiktok">
                <p>Tiktok</p>
             </a>
-
             <a class="quicklink-button" id="custom-site-container">
                <img src="/assets/plus.png" alt="Add Custom Site">
                <p>Add Site</p>
             </a>
          </div>
-
          <div class="desc left-margin">
             <p id="uv-error"></p>
             <pre id="uv-error-code"></pre>
          </div>
-
          <script src="/szvy/uv.bundle.js" defer></script>
          <script src="/szvy/uv.config.js?cdn" defer></script>
          <script>
            const form = document.querySelector("#uv-form");
-     const input = document.querySelector("#uv-address");
-     
-     document.addEventListener("DOMContentLoaded", function () {
-       form.addEventListener("submit", async (event) => {
-         event.preventDefault();
-         window.navigator.serviceWorker
-           .register("/szvy/sw.js", {
-             scope: __uv$config.prefix,
-           })
-           .then(() => {
-             let url = input.value.trim();
-             if (!isUrl(url)) url = "https://www.google.com/search?hl=en-us&q=" + url;
-             else if (!(url.startsWith("https://") || url.startsWith("http://")))
-               url = "http://" + url;
-             sessionStorage.setItem("encodedUrl", __uv$config.encodeUrl(url));
-             location.href = "math.html";
+           const input = document.querySelector("#uv-address");
+           document.addEventListener("DOMContentLoaded", function () {
+             if (!localStorage.getItem('announcementClosed')) {
+               $('#announcement-banner').fadeIn();
+             }
+             $('#announcement-close').click(function() {
+               $('#announcement-banner').fadeOut();
+               localStorage.setItem('announcementClosed', 'true');
+             });
+             form.addEventListener("submit", async (event) => {
+               event.preventDefault();
+               window.navigator.serviceWorker
+                 .register("/szvy/sw.js", {
+                   scope: __uv$config.prefix,
+                 })
+                 .then(() => {
+                   let url = input.value.trim();
+                   if (!isUrl(url)) url = "https://www.google.com/search?hl=en-us&q=" + url;
+                   else if (!(url.startsWith("https://") || url.startsWith("http://")))
+                     url = "http://" + url;
+                   sessionStorage.setItem("encodedUrl", __uv$config.encodeUrl(url));
+                   location.href = "math.html";
+                 });
+             });
            });
-       });
-     });
-     
-     function isUrl(val = "") {
-       if (
-         /^http(s?):\/\//.test(val) ||
-         (val.includes(".") && val.slice(0, 1) !== " ")
-       )
-         return true;
-       return false;
-     }
-     
+           function isUrl(val = "") {
+             if (
+               /^http(s?):\/\//.test(val) ||
+               (val.includes(".") && val.slice(0, 1) !== " ")
+             )
+               return true;
+             return false;
+           }
          </script>
       <script>
          function loadCustomLinks() {
             var quicklinkContainer = document.getElementById('quicklink-container');
             var savedLinks = JSON.parse(localStorage.getItem('customLinks')) || [];
-
             savedLinks.forEach(function(link) {
                addCustomLinkToUI(link.url, link.image, link.name);
             });
@@ -127,19 +124,16 @@
                alert("URL is required!");
                return;
             }
-
             var customImage = prompt("Enter the image URL for the site:");
             if (!customImage) {
                alert("Image URL is required!");
                return;
             }
-
             var customName = prompt("Enter the name for the site:");
             if (!customName) {
                alert("Site name is required!");
                return;
             }
-
             var newLink = {
                url: customUrl,
                image: customImage,
