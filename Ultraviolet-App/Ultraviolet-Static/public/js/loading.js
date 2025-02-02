@@ -1,7 +1,36 @@
 document.addEventListener('DOMContentLoaded', function() {
     const loadingScreen = document.getElementById('loading-screen');
+    const h1Element = document.getElementById('ld');
+
+    const headings = [
+        "frogies arcade sucks, fight me frogiee1",
+        "new szvy central update when carti drops",
+        "remember to follow the tiktok @szvy.central",
+        "booyah!",
+        "szvy.lol ay 🗣️🗣️🔥🔥",
+        "doesnt steal your data",
+        "contains no surgar!",
+        "the fog is coming, august 31st 2026",
+        "goonicide before gta 6 is wild 😭🙏",
+        "i cant put down the netcup, i cant put down the netcup",
+        "can we all agree to start dabbing again in 2025? DATTEBYO!",
+        "ts ste lwk pmo ngl lke icl ts ste is so bns ddss nt gnna us ts",
+        "BOIII THIS SITE SO FRIGGIN TOUGH 🤣🫱",
+        "if you would just get up and teach them instead of handing them a freaking packet, yo",
+        "808 = essentially a crashout",
+        "geeked vs locked in",
+        "\"if gravity can pull an apple, then you can pull a bad bih too\". - isacc newton",
+        "senator im szvy",
+        ""
+    ];
+
     if (loadingScreen) {
         document.body.classList.add('loading');
+
+        if (h1Element) {
+            h1Element.textContent = headings[Math.floor(Math.random() * headings.length)];
+        }
+
         window.addEventListener('load', function() {
             setTimeout(function() {
                 loadingScreen.classList.add('fade-out');
@@ -11,6 +40,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }, 100);
         });
     } else {
-        console.error('Loading screen element not found');
+        console.error('loading screen not found?????');
     }
 });

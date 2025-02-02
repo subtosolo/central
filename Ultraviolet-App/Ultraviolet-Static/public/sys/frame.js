@@ -14,7 +14,7 @@ function isUrl(val = "") {
     window.navigator.serviceWorker.register("/szvy/sw.js", {
       scope: "/szvy/szvy/",
     });
-    if (!isUrl(url)) url = "https://www.google.com/search?hl=en-us&q=" + url;
+    if (!isUrl(url)) url = "https://duckduckgo.com/?t=h_&q=" + url;
     else if (!(url.startsWith("https://") || url.startsWith("http://")))
       url = "https://" + url;
     let urlEncoded = __uv$config.encodeUrl(url);
@@ -190,7 +190,7 @@ function isUrl(val = "") {
         doc.head.appendChild(link);
         doc.body.appendChild(iframe);
         const pLink =
-          localStorage.getItem(encodeURI("pLink")) || "https://www.google.com/";
+          localStorage.getItem(encodeURI("pLink")) || "https://duckduckgo.com/";
         location.replace(pLink);
         const script = doc.createElement("script");
         script.textContent = `

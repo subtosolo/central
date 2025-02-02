@@ -12,11 +12,6 @@
 </head>
 <body>
    <div id="particles-js"></div>
-   <div class="announcement-modal" id="announcement-banner" style="display:none;">
-     <div class="close-icon" id="announcement-close">&times;</div>
-     <i class="fa-solid fa-bullhorn fa-2xl" style="margin-bottom:10px;"></i>
-     <div class="announcement-text" style="margin-top: 20px;">new update! most now.gg games are fixed, minecraft is fixed, and the szvy central minecraft server is out now! just go to multiplayer under the minecraft on this site!</div>
-   </div>
    <div class="navbar">
     <div class="logo">
         <span>Szvy Central</span>
@@ -35,10 +30,14 @@
    <div id="content">
       <h1 id="title">Szvy Central V2</h1>
       <form id="uv-form">
-        <input id="uv-search-engine" value="https://www.google.com/search?q=%s" type="hidden"> 
+        <input id="uv-search-engine" value="https://duckduckgo.com/?t=h_&q=%s" type="hidden"> 
         <input id="uv-address" type="text" placeholder="Search freely with Szvy Central..." class="form__input" autocomplete="off">
          <p class="smallahhtext">Quick Links</p>
          <div class="quicklink-container" id="quicklink-container">
+            <a class="quicklink-button" href="embed.html#https://www.duckduckgo.com">
+               <img src="/assets/duckduckgo.png" alt="DuckDuckGo">
+               <p>DuckDuckGo</p>
+            </a>
             <a class="quicklink-button" href="embed.html#https://www.google.com">
                <img src="/assets/google.png" alt="Google">
                <p>Google</p>
@@ -85,7 +84,7 @@
                  })
                  .then(() => {
                    let url = input.value.trim();
-                   if (!isUrl(url)) url = "https://www.google.com/search?hl=en-us&q=" + url;
+                   if (!isUrl(url)) url = "https://duckduckgo.com/?t=h_&q=" + url;
                    else if (!(url.startsWith("https://") || url.startsWith("http://")))
                      url = "http://" + url;
                    sessionStorage.setItem("encodedUrl", __uv$config.encodeUrl(url));

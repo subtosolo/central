@@ -1,2 +1,0 @@
-const 'banned' {
-  "milo",}
