@@ -16,12 +16,12 @@ document.addEventListener('DOMContentLoaded', function() {
         "can we all agree to start dabbing again in 2025? DATTEBYO!",
         "ts ste lwk pmo ngl lke icl ts ste is so bns ddss nt gnna us ts",
         "BOIII THIS SITE SO FRIGGIN TOUGH 🤣🫱",
-        "if you would just get up and teach them instead of handing them a freaking packet, yo",
+        "instead of handing them a freaking packet, yo",
         "808 = essentially a crashout",
         "geeked vs locked in",
         "\"if gravity can pull an apple, then you can pull a bad bih too\". - isacc newton",
-        "senator im szvy",
-        ""
+        "best website for the unemployed",
+        "szby low taper fading"
     ];
 
     if (loadingScreen) {
