@@ -2,7 +2,7 @@
   {
     "url": "/extra/suggest.html",
     "img": "/assets/suggest.png",
-    "alt": "no one is ever gonna check this, unless they nerdy af and want to check this json file,"
+    "alt": "0"
   },
   {
     "url": "/gsrc/1/index.html",
@@ -16,22 +16,22 @@
   },
   {
     "url": "/gsrc/1v1lol/index.html",
-    "img": "/assets/1v1lol.png",
+    "img": "/assets/latest (1).png",
     "alt": "1v1.lol"
   },
   {
-    "url": "/gsrc/1/index.html",
-    "img": "/assets/1game.png",
-    "alt": "1"
+    "url": "/gsrc/2048/index.html",
+    "img": "/assets/2048.png",
+    "alt": "2048"
   },
   {
-    "url": "/gsrc/1/index.html",
-    "img": "/assets/1game.png",
-    "alt": "1"
+    "url": "/gsrc/amongus/index.html",
+    "img": "/assets/among.png",
+    "alt": "among us"
   },
   {
-    "url": "/gsrc/1/index.html",
-    "img": "/assets/1game.png",
+    "url": "/gsrc/angrybirds/index.html",
+    "img": "/assets/angrybirds.png.png",
     "alt": "1"
   },
   {

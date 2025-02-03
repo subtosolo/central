@@ -76,6 +76,8 @@ document.addEventListener("DOMContentLoaded", function () {
         return;
       }
 
+      data.sort((a, b) => a.alt.localeCompare(b.alt));
+
       data.forEach(item => {
         const linkElement = document.createElement('a');
 
@@ -96,7 +98,6 @@ document.addEventListener("DOMContentLoaded", function () {
     })
     .catch(error => console.error('error fetching JSON:', error));
 });
-
 </script>
 
 </html>
