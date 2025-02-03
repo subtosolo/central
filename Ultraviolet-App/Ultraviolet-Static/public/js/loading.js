@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
         "booyah!",
         "szvy.lol ay 🗣️🗣️🔥🔥",
         "doesnt steal your data",
-        "contains no surgar!",
+        "contains no sugar!",
         "the fog is coming, august 31st 2026",
         "goonicide before gta 6 is wild 😭🙏",
         "i cant put down the netcup, i cant put down the netcup",

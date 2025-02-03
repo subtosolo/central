@@ -56,7 +56,7 @@
   },
   {
     "url": "/gsrc/badtimesimulator/index.html",
-    "img": "/assets/badtimesimulator.png",
+    "img": "/assets/badtimesim.png",
     "alt": "bad time simulator"
   },
   {
@@ -65,9 +65,9 @@
     "alt": "baldi's basics"
   },
   {
-    "url": "/gsrc/1/index.html",
-    "img": "/assets/1game.png",
-    "alt": "1"
+    "url": "/gsrc/basketball-legends/index.html",
+    "img": "/assets/bl.png",
+    "alt": "basketball legends"
   },
   {
     "url": "/gsrc/1/index.html",
