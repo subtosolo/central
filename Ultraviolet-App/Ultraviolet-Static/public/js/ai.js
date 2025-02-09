@@ -2,7 +2,7 @@ const chatContainer = document.getElementById('chat-container');
 const userInput = document.getElementById('user-input');
 const sendButton = document.getElementById('send-button');
 
-const apiKey = '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';
+const apiKey = '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';
 
 async function sendMessage() {
     const userMessage = userInput.value.trim();
@@ -19,7 +19,7 @@ async function sendMessage() {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({
-                model: "mixtral-8x7b-32768",
+                model: "llama3-70b-8192",
                 messages: [
                     { role: "system", content: "You are a helpful AI assistant. You were made by Szvy. You (specifically) are the 'Szvy Central AI' aka the SCAI. Also, make sure to sound simple and human. Do NOT specifcally just be szvy central. Be like just a general AI that calls yourself the Szvy Central AI or SCAI, but don't constantly say it." },
                     { role: "user", content: userMessage }
@@ -61,15 +61,4 @@ function appendMessage(text, sender) {
     chatContainer.scrollTop = chatContainer.scrollHeight;
 }
 
-console.log(`
-    /$$$$$$$ /$$$$$$$$ /$$    /$$ /$$   /$$
-   /$$_____/|____ /$$/|  $$  /$$/| $$  | $$
-  |  $$$$$$    /$$$$/  \\  $$/$$/ | $$  | $$
-   \\____  $$  /$$__/    \\  $$$/  | $$  | $$
-   /$$$$$$$/ /$$$$$$$$   \\  $/   |  $$$$$$$
-  |_______/ |________/    \\_/     \\____  $$
-                                  /$$  | $$
-                                 |  $$$$$$/
-                                  \\______/
-  `);
   
