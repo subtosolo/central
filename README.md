@@ -20,8 +20,9 @@ npm start
 ```
 ## deploy
 
-this repo is made in nodejs, which means you can only host this on a few platforms. i personally recommend [render](https://render.com/deploy?repo=https://github.com/szvy/central)
-
+this repo is made in nodejs, which means you can only host this on a few platforms. i personally recommend [render](https://render.com/deploy?repo=https://github.com/szvy/central) <br>
+(or make a byod link) <br>
+(you can find info in the discord server
 
 ## credits
 
