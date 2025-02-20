@@ -27,6 +27,11 @@
     <script src="../js/usesettings.js"></script>
     <script src="/particles.js"></script>
     <script src="/app.js"></script>
+    <style>
+        body {
+            overflow: hidden;
+        }
+    </style>
 </head>
 <body>
     <div id="particles-js"></div>
@@ -65,14 +70,14 @@
         <ins id="adElement">
             <script type="text/javascript">
                 atOptions = {
-                    'key' : 'fb7dc433f69117a50fd35024cd7aeee8',
+                    'key' : '14f61bd7fa8590f4dff27bb8fd542726',
                     'format' : 'iframe',
-                    'height' : 300,
+                    'height' : 600,
                     'width' : 160,
                     'params' : {}
                 };
             </script>
-            <script type="text/javascript" src="//www.highperformanceformat.com/fb7dc433f69117a50fd35024cd7aeee8/invoke.js"></script>
+            <script type="text/javascript" src="//www.highperformanceformat.com/14f61bd7fa8590f4dff27bb8fd542726/invoke.js"></script>
         </ins>
         <div class="adtext">Advertisement</div>
     </div>
@@ -95,24 +100,32 @@
 
     <script>
         var iframe = document.getElementById("iframe");
+    
         function fullscreen() {
             if (iframe.requestFullscreen) iframe.requestFullscreen();
             else if (iframe.webkitRequestFullscreen) iframe.webkitRequestFullscreen();
             else if (iframe.msRequestFullscreen) iframe.msRequestFullscreen();
         }
-        document.getElementById("reloadbtn").onclick = function() { iframe.src += ""; };
-
+    
+        document.getElementById("reloadbtn").onclick = function() { 
+            iframe.src += ""; 
+        };
+    
         function getUrlParameter(name) {
             var regex = new RegExp('[?&]' + name + '=([^&#]*)');
             var results = regex.exec(location.search);
             return results ? decodeURIComponent(results[1].replace(/\+/g, ' ')) : '';
         }
-
-        async function fetchGameData(url) {
+    
+        async function fetchGameData() {
             try {
+                const urlValue = getUrlParameter('url');
+                if (!urlValue) return;
+    
                 const response = await fetch('/json/gg.json');
                 const data = await response.json();
-                const game = data.find(game => game.link === url);
+                const game = data.find(game => game.url === urlValue);
+    
                 if (game && game.alt) {
                     document.getElementById("titletext").textContent = game.alt;
                 }
@@ -120,14 +133,15 @@
                 console.error("Error fetching JSON:", error);
             }
         }
-
+    
         var url = getUrlParameter('url');
         if (url) {
             url = url.replace(/%2F/g, "/");
             iframe.src = url;
-            fetchGameData(url);
+            fetchGameData();
         }
     </script>
+    
     <script type='text/javascript' src='//pl24893363.effectiveratecpm.com/e1/78/e8/e178e83d8a9f1f2aed9465374abd00ab.js'></script>
 </body>
 </html>

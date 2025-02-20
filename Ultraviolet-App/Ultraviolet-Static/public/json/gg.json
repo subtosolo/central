@@ -192,7 +192,7 @@
   {
     "url": "/emulatorjs/dkc/index.html",
     "img": "/assets/dkc.jpg",
-    "alt": "donkney kong country"
+    "alt": "donkey kong country"
   },
   {
     "url": "/gsrc/death-run-3d/index.html",
@@ -200,14 +200,14 @@
     "alt": "death run 3d"
   },
   {
-    "url": "/gsrc/1/index.html",
-    "img": "/assets/1game.png",
-    "alt": "1"
+    "url": "/gsrc/dodge/index.html",
+    "img": "/assets/dodge.png",
+    "alt": "dodge"
   },
   {
-    "url": "/gsrc/1/index.html",
-    "img": "/assets/1game.png",
-    "alt": "1"
+    "url": "/gsrc/dogeminer/index.html",
+    "img": "/assets/doge.png",
+    "alt": "doge miner"
   },
   {
     "url": "/gsrc/1/index.html",

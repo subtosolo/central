@@ -1,5 +1,5 @@
 body {
-  background-color: #0f0f0f;
+  background-color: #250307;
 }
 
 #particles-js{
@@ -44,18 +44,18 @@ body {
 }
 
 #discord:hover {
-  background-color:  rgb(88, 101, 242);
-  border: 4px solid rgb( 88, 101, 242);
-  box-shadow: 0 0 10px rgb( 88, 101, 242), 0 0 20px rgb( 88, 101, 242), 0 0 30px rgb( 88, 101, 242);
+  background-color:  rgb(242, 88, 161);
+  border: 4px solid rgb(242, 88, 161);
+  box-shadow: 0 0 10px rgb(242, 88, 161), 0 0 20px rgb(242, 88, 161), 0 0 30px rgb(242, 88, 161);
   transition: all .2s ease-in-out; 
 }
 
 #discord:hover {  /* BUTTONS MADE BY HTTPS://BRUNYS.SITE */
-  background-color: rgb(88, 101, 242);
-  border: 4px solid rgb(88, 101, 242);
-  box-shadow: 0 0 10px rgb(88, 101, 242), 0 0 20px rgb(88, 101, 242), 0 0 30px rgb(88, 101, 242);
+  background-color: rgb(242, 88, 161);
+  border: 4px solid rgb(242, 88, 161);
+  box-shadow: 0 0 10px rgb(242, 88, 161), 0 0 20px rgb(242, 88, 161), 0 0 30px rgb(242, 88, 161);
   transition: all .2s ease-in-out; 
-  outline: 2px solid rgb(88, 101, 242);
+  outline: 2px solid rgb(242, 88, 161);
 }
 
 #allb, #abcloak, #discord, #confirmtab, #setkeybind {
@@ -63,10 +63,10 @@ body {
   font-size: 1.2em;
   padding: 10px 20px;
   margin: 10px;
-  background-color: #1c1c1c;
+  background-color: #250307;
   color: #fff;
   border-radius: 8px;
-  outline: 2px solid #545454;
+  outline: 2px solid #490714;
   border: 4px solid transparent;
   cursor: pointer;
   transition: all .2s ease-in-out; 
@@ -74,8 +74,8 @@ body {
 }
 
 #allb:hover, #abcloak:hover, #confirmtab:hover, #setkeybind:hover {
-  border: 4px solid white;
-  box-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white;
+  border: 4px solid #490714;
+  box-shadow: 0 0 10px #490714, 0 0 20px #490714, 0 0 30px #490714;
   transition: all .2s ease-in-out; 
   outline: 2px solid transparent;
 }
@@ -86,7 +86,7 @@ body {
   font-size: 1.2em;
   padding: 10px 20px;
   margin: 10px;
-  background-color: #1c1c1c;
+  background-color: #250307;
   color: #fff;
   border-radius: 8px;
   outline: 2px solid #545454;
@@ -136,7 +136,7 @@ body {
   color: white;
   cursor: pointer;
   transition: all ease-in-out 0.2s;
-  background-color: #242424;
+  background-color: #250307;
   padding: 8px;
   border-radius: 8px;
 }
@@ -155,7 +155,7 @@ body {
 
 
 #iframeicons:hover, #fullscreen:hover {
-  color: #007bff;
+  color: #ff007b;
 }
 
 #splash-text {
@@ -174,7 +174,6 @@ body {
   display: block;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   z-index: 1;
-
 }
 
 .scpframe {
@@ -205,7 +204,7 @@ body {
 
 .imgbutton:hover {
   transform: scale(1.07);
-  border-color: white;
+  border-color: #6b0a1d;
   border-radius: 5px;
 }
 
@@ -218,8 +217,8 @@ body {
   font-size: 18px;
   z-index: 9998;
   color: #ffffff;
-  background-color: #1c1c1c;
-  border: 2px solid #545454;
+  background-color: #250307;
+  border: 2px solid #490714;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   font-family: notitle;
@@ -237,8 +236,8 @@ body {
 
 #searchBar:focus {
   outline: none;
-  border-color: white;
-  box-shadow: 0 0 10px white, 0 0 20px white;
+  border-color: #490714;
+  box-shadow: 0 0 10px #490714, 0 0 20px #490714;
   position: relative;
 }
 
@@ -250,8 +249,8 @@ body {
   display: block;
   font-size: 20px;
   color: #ffffff;
-  background-color: #1c1c1c;
-  border: 2px solid #545454;
+  background-color: #250307;
+  border: 2px solid #490714;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   font-family: notitle;
@@ -267,10 +266,9 @@ body {
 
 .form__input:focus {
   outline: none;
-  border-color: white;
-  box-shadow: 0 0 10px white, 0 0 20px white;
+  border-color: #490714;
+  box-shadow: 0 0 10px #490714, 0 0 20px #490714;
 }
-
 
 #provide {
   width: 100%;
@@ -297,9 +295,9 @@ footer {
   font-family: notitle;
   font-size: 1.2em;
   padding: 10px 20px;
-  background-color: #000000;
+  background-color: #250307;
   color: #ffffff;
-  border: 4px solid white;
+  border: 4px solid #680a1f;
   border-radius: 12px;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
@@ -307,8 +305,8 @@ footer {
 }
 
 #gatekeep-button:hover {
-  border: 4px solid rgb(255, 255, 255);
-  box-shadow: 0 0 10px rgb(255, 255, 255), 0 0 20px rgb(255, 255, 255), 0 0 30px rgb(255, 255, 255);
+  border: 4px solid #680a1f;
+  box-shadow: 0 0 10px #680a1f, 0 0 20px #680a1f, 0 0 30px #680a1f;
   transition: all 0.2s ease-in-out;
 }
 
@@ -323,7 +321,7 @@ footer {
   padding: 20px;
   margin: 20px auto;
   max-width: 800px;
-  background-color: #1c1c1c;
+  background-color: #300410;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   text-align: center;
@@ -341,7 +339,7 @@ h2 {
 
 #faviconDropdown {
   font-family: notitle;
-  background-color: #222;
+  background-color: #250307;
   color: #ffffff;
   border: 1px solid #ffffff;
   border-radius: 30px;
@@ -361,7 +359,7 @@ label[for="faviconDropdown"] {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: #1c1c1c;
+  background-color: #35070d;
   position: fixed;
   width: 85%;
   top: 0;
@@ -370,57 +368,6 @@ label[for="faviconDropdown"] {
   border-bottom-left-radius: 17px;
   border-bottom-right-radius: 17px;
   font-family: 'notitle';
-}
-
-.navbar-rizz {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  background-color: #1c1c1c;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 9999;
-  font-family: 'notitle';
-}
-.navbar-rizz .logo {
-  font-size: 24px;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  color: white;
-}
-
-.navbar-rizz .logo i {
-  margin-right: 8px;
-  margin-left: 8px;
-  color: #007bff;
-}
-
-.navbar-rizz .nav-right {
-  display: flex;
-  align-items: center;
-  margin-right: 65px; 
-}
-
-.navbar-rizz .nav-right a {
-  color: white;
-  text-decoration: none;
-  margin-left: 20px;
-  display: flex;
-  align-items: center;
-  font-size: 23px;
-  transition: all 0.2s ease-in-out;
-}
-
-.navbar-rizz .nav-right a i {
-  margin-right: 8px;
-}
-
-.navbar-rizz .nav-right a:hover {
-  color: #007bff;
 }
 
 .navbar .logo {
@@ -434,7 +381,6 @@ label[for="faviconDropdown"] {
 .navbar .logo i {
   margin-right: 8px;
   margin-left: 8px;
-  color: #007bff;
 }
 
 .navbar .nav-right {
@@ -458,14 +404,7 @@ label[for="faviconDropdown"] {
 }
 
 .navbar .nav-right a:hover {
-  color: #007bff;
-}
-
-.adforgames {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 20px 0;
+  color: #ff9bcb;
 }
 
 #roddyrichhesbox {
@@ -514,7 +453,7 @@ label[for="faviconDropdown"] {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #121212;
+  background-color: #250307;
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -557,10 +496,10 @@ label[for="faviconDropdown"] {
   font-size: 1.2em;
   padding: 10px 20px;
   margin: 10px;
-  background-color: #1c1c1c;
+  background-color: #250307;
   color: #fff;
   border-radius: 8px;
-  outline: 2px solid #545454;
+  outline: 2px solid #680a1f;
   border: 4px solid transparent;
   cursor: pointer;
   transition: all .2s ease-in-out;
@@ -568,12 +507,11 @@ label[for="faviconDropdown"] {
 }
 
 #gatekeep-button:hover, #tabselect:hover {
-  border: 4px solid white;
-  box-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white;
+  border: 4px solid #680a1f;
+  box-shadow: 0 0 10px #680a1f, 0 0 20px #680a1f, 0 0 30px #680a1f;
   transition: all .2s ease-in-out;
   outline: 2px solid transparent;
 }
-
 
 #gatekeep-status {
   margin-top: 10px;
@@ -586,7 +524,7 @@ label[for="faviconDropdown"] {
   width: 90px;
   height: 110px;
   border-radius: 10px;
-  background-color: #444;
+  background-color: #35040a;
   color: white;
   font-size: 12px;
   display: flex;
@@ -604,7 +542,7 @@ label[for="faviconDropdown"] {
 }
 
 .quicklink-button:hover {
-  background-color: #666;
+  background-color: #42050c;
 }
 
 .quicklink-button img {
@@ -664,8 +602,8 @@ label[for="faviconDropdown"] {
   z-index: 9998;
   top: 0;
   color: #ffffff;
-  background-color: #1c1c1c;
-  border: 2px solid #545454;
+  background-color: #040a35;
+  border: 2px solid #050c42;
   border-radius: 8px;
   font-family: notitle;
   text-align: center;
@@ -686,6 +624,7 @@ label[for="faviconDropdown"] {
   box-shadow: 0 0 10px white, 0 0 20px white;
   position: relative;
 }
+
 #uv-form{
   padding: 3px;
   height: 0;

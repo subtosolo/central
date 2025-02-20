@@ -90,7 +90,7 @@
 }
 
 #titletext {
-    margin: 0;
+    margin-left: 20px;
     font-size: 1.4vw;
     padding: 0 0.5vw 0.5vw 0 0;
     color: #ffffff;
@@ -167,8 +167,8 @@
 
 .addisplay {
     margin-left: 80vw;
-    width: 16vw;
-    height: 32vw;
+    width: 160px;
+    height: 600px;
     background-color: #272727;
     border-radius: 0.5vw;
     display: flex;
@@ -177,6 +177,7 @@
     outline: 0.2vw solid #ffffff26;
     box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.24);
     position: relative;
+    left: 50px;
 }
 
 .addisplay .adtext {
@@ -186,7 +187,7 @@
     opacity: 0.7;
     letter-spacing: 0.05vw;
     position: absolute;
-    right: 5.5vw;
+    right: 2vw;
     padding-top: 10px;
     margin-top: 32.2vw;
     transform-origin: right center;
@@ -195,33 +196,64 @@
 }
 
 .bottom-addisplay {
-    width: 100%;
+    width: 90%;
     max-width: 728px;
     height: auto;
-    aspect-ratio: 730 / 90;
+    aspect-ratio: 728 / 90;
     background-color: #272727;
-    border-radius: 0.5vw;
+    border-radius: 8px;
     display: flex;
-    margin: 10px auto;
-    outline: 0.2vw solid #ffffff26;
-    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.24);
-    position: relative;
+    justify-content: center;
+    align-items: center;
+    outline: 2px solid #ffffff26;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.24);
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 30px;
 }
 
 .bottom-addisplay .adtext {
-    font-size: 0.5vw;
+    font-size: min(12px, 2vw);
     text-transform: uppercase;
     text-align: center;
     opacity: 0.7;
-    letter-spacing: 0.05vw;
+    letter-spacing: 0.05em;
     position: absolute;
-    right: 0;
-    left: 0;
     bottom: -15px;
-    transform-origin: center;
+    width: 100%;
     color: white;
     font-family: notitle;
 }
+
+@media screen and (max-width: 1366px) {
+    .bottom-addisplay {
+        bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #gameframe {
+        bottom: 100px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .bottom-addisplay {
+        bottom: 170px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .bottom-addisplay {
+        bottom: 180px;
+    }
+
+    .bottom-addisplay .adtext {
+        font-size: 10px;
+    }
+}
+
 
 @font-face {
     font-family: notitle;
