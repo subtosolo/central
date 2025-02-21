@@ -36,7 +36,11 @@ this repo is made in nodejs, which means you can only host this on a few platfor
 * [3kh0](https://github.com/3kh0) - a lot of game files
 * [selenite](https://gitlab.com/skysthelimit.dev/selenite) - a lot more game files
 * [frogiee1](https://frogiee.one) - nav bar + nowgg.lol owner
+* [red not sus](https://ch3n.cc) - iframe page
 
 ## license
-this website is registered under the [MIT license](LICENSE)
+this website is registered under the [MIT license](LICENSE), read it if you want idrc
 
+## discord
+
+join if you want idk, [discord.gg/szvy](https://discord.gg/szvy)
