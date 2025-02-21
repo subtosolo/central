@@ -1,4 +1,9 @@
-# Szvy Central V2
+<p align="center">
+  <img src="https://files.catbox.moe/vl5cij.png" alt="szvy centraling" width="250">
+</p>
+
+<h1 align="center">Szvy Central V2</h1>
+
 
 a modern unblocked games site
 
@@ -7,12 +12,12 @@ a modern unblocked games site
 
 
 1. download the code
-2. run this command
+2. cd into Ultraviolet-App/
+3. install install install
 
 ```bash
 npm i
 ```
-3. cd into Ultraviolet-App/
 4. to start it, run this
 
 ```bash
@@ -28,7 +33,10 @@ this repo is made in nodejs, which means you can only host this on a few platfor
 
 * [szvy](https://github.com/szvy) - the goated developer
 * [ultraviolet](https://github.com/titaniumnetwork-dev/Ultraviolet) - the entire proxy backend
-* ill add more credits soon 🙏🙏
+* [3kh0](https://github.com/3kh0) - a lot of game files
+* [selenite](https://gitlab.com/skysthelimit.dev/selenite) - a lot more game files
+* [frogiee1](https://frogiee.one) - nav bar + nowgg.lol owner
 
 ## license
 this website is registered under the [MIT license](LICENSE)
+
