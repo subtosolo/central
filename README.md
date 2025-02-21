@@ -5,7 +5,7 @@
 <h1 align="center">Szvy Central V2</h1>
 
 
-a modern unblocked games site
+A modern unblocked games site, based off of Ultraviolet.
 
 
 ### prerequisites
