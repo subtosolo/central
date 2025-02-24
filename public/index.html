@@ -97,20 +97,22 @@
                localStorage.setItem('announcementClosed', 'true');
              });
              form.addEventListener("submit", async (event) => {
-               event.preventDefault();
-               window.navigator.serviceWorker
-                 .register("/szvy/sw.js", {
-                   scope: __uv$config.prefix,
-                 })
-                 .then(() => {
-                   let url = input.value.trim();
-                   if (!isUrl(url)) url = "https://duckduckgo.com/?t=h_&q=" + url;
-                   else if (!(url.startsWith("https://") || url.startsWith("http://")))
-                     url = "http://" + url;
-                   sessionStorage.setItem("encodedUrl", __uv$config.encodeUrl(url));
-                   location.href = "math.html";
-                 });
-             });
+        event.preventDefault();
+        await window.navigator.serviceWorker.register("/szvy/sw.js", {
+          scope: __uv$config.prefix,
+        });
+
+        let url = input.value.trim();
+        if (!isUrl(url)) {
+          url = "https://duckduckgo.com/?q=" + encodeURIComponent(url);
+        } else if (!(url.startsWith("https://") || url.startsWith("http://"))) {
+          url = "http://" + url;
+        }
+
+        const encodedUrl = __uv$config.prefix + __uv$config.encodeUrl(url);
+        window.location.href = "math.html?u=" + btoa(encodedUrl);
+      });
+
            });
            function isUrl(val = "") {
              if (

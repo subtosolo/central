@@ -1,86 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <link rel="stylesheet" href="/search.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="https://www.google.com/favicon.ico">
- 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>calculator - Google Search</title>
-</head>
-<body>
-    <header>
-        <img class="logo" src="/assets/logo.png" onclick="window.location.href='/';">
-        <form id="uv-form">
-            <input id="uv-search-engine" value="https://duckduckgo.com/?t=h_&q=%s" type="hidden"/> 
-            <input id="uv-address-searchbar" type="text" placeholder="search anything..." class="form__input"/>
-          </form>
-  <div class="navbar-right">
-          <div id="the-button-container">
-            <button id="stupidpxycontrols" onclick="goback()"><img id="roddrickiliousnotfinanciallystablemathmaticallyacurateretangularprism" src="/images/back.svg" width="55px" height="55px" ></img></button>
-            <button id="stupidpxycontrols" onclick="rotatetozone()"><img id="roddrickiliousnotfinanciallystablemathmaticallyacurateretangularprism" src="/images/forward.svg" width="55px" height="55px" ></img></button>
-            <button id="stupidpxycontrols" onclick="fn_reload()"><img id="roddrickiliousnotfinanciallystablemathmaticallyacurateretangularprism" src="/images/reload.svg" width="55px" height="55px" ></img></button>
-          </div>
-        </div>
-    </header>
-    <iframe src="" id="iframeid" style="bottom: 0" marginheight="0px" marginwidth="0px"  allowfullscreen></iframe>
-    <style>
-        #uv-form{
-            padding: 3px;
-            height: 0
-        }
-    </style>
-         <script src="szvy/bundle.js" defer></script>
-         <script src="szvy/config.js" defer></script>
-         <script src="register-sw.js" defer></script>
-         <script src="search.js" defer></script>
-         <script src="/sys/frame.js" defer></script>
-         <script src="index.js" defer></script>
+    <link rel="stylesheet" href="css/search.css" />
+    <link rel="stylesheet" href="https://atugatran.github.io/FontAwesome6Pro/css/all.min.css"/>
+  </head>
+  
+  <body>
+    <div class="browser-container">
+      <div class="tab-bar-container">
+        <div class="tab-bar"></div>
+        <button class="new-tab-button">+</button>
+      </div>
+      
+      <div class="url-bar-container">
+        <button class="icon-button" id="backButton">
+          <i class="fa-sharp fa-regular fa-arrow-left"></i>
+        </button>
+        <button class="icon-button" id="forwardButton">
+          <i class="fa-sharp fa-regular fa-arrow-right"></i>
+        </button>
+        <button class="icon-button" id="reloadButton">
+          <i class="fa-sharp fa-regular fa-rotate-right"></i>
+        </button>
+        <input type="text" class="url-input" placeholder="Search or type URL" readonly />
+        <button class="icon-button" id="homeButton" onclick="window.location = '/';">
+          <i class="fa-sharp fa-regular fa-house"></i>
+        </button>
+        <button class="icon-button" id="injectButton" onclick="erudaToggle()">
+          <i class="fa-sharp fa-regular fa-code"></i>
+        </button>
+      </div>
+      
+      <div class="browser-window">
+        <iframe src="" frameborder="0" id="iframeid"></iframe>
+      </div>
+    </div>
+    
     <script>
-          function fn_reload(){
-              var iframe = document.getElementById('iframeid');
-              iframe.src = iframe.contentWindow.location.href;
-          }
-          function goFullscreen(id) {
-        var element = document.getElementById(id);
-        if (element.mozRequestFullScreen) {
-          element.mozRequestFullScreen();
-        } else if (element.webkitRequestFullScreen) {   
-          element.webkitRequestFullScreen();
-        }
-    }
-    function goback(){
-      iframe.contentWindow.history.back()
-    }
-    function rotatetozone(){
-      iframe.contentWindow.history.forward()
-    }
-
-const iframe = document.querySelector('iframe');
-let lastURL = '';
-
-function checkIframeURL() {
-    try {
-        const currentURL = iframe.contentWindow.location.href;
-
-        if (currentURL !== lastURL) {
+      const iframe = document.querySelector('iframe');
+      let lastURL = '';
+      
+      function checkIframeURL() {
+        try {
+          const currentURL = iframe.contentWindow.location.href;
+          if (currentURL !== lastURL) {
             console.log(`Iframe URL changed to: ${currentURL}`);
             lastURL = currentURL;
-const websitePath = currentURL
-        .replace(window.location.origin, "")
-        .replace("/szvy/szvy/", "");
-      localStorage.setItem("decoded", websitePath);
-      const decodedValue = __uv$config.decodeUrl(websitePath);
-      document.getElementById("uv-address-searchbar").value = decodedValue;
+            
+            const websitePath = currentURL.replace(window.location.origin, "").replace("/szvy/szvy/", "");
+            localStorage.setItem("decoded", websitePath);
+            
+            const decodedValue = __uv$config.decodeUrl(websitePath);
+            document.querySelector(".url-input").value = decodedValue;
+            
+            if (decodedValue === "a`owt8bnalk") {
+              document.querySelector(".url-input").value = "Loading your content...";
+            }
+            
+            monitorIframeProgress(iframe.contentWindow);
+          }
+        } catch (error) {
+          console.error('Cannot access iframe URL due to cross-origin policy');
         }
-    } catch (error) {
-        console.error('Cannot access iframe URL due to cross-origin policy');
-    }
+      }
+      
+      setInterval(checkIframeURL, 1000);
+
+      function erudaToggle() {
+  if (!document.getElementById("iframeid")) return;
+  const erudaWindow = document.getElementById("iframeid").contentWindow;
+  const erudaDocument = document.getElementById("iframeid").contentDocument;
+  if (!erudaWindow || !erudaDocument) return;
+  if (erudaWindow.eruda?._isInit) {
+    erudaWindow.eruda.destroy();
+  } else {
+    let script = erudaDocument.createElement("script");
+    script.src = "https://cdn.jsdelivr.net/npm/eruda";
+    script.onload = function () {
+      if (!erudaWindow) return;
+      erudaWindow.eruda.init();
+      erudaWindow.eruda.show();
+    };
+    erudaDocument.head.appendChild(script);
+  }
 }
-
-setInterval(checkIframeURL, 1000);
     </script>
-</body>
-
+    
+    <script src="/szvy/bundle.js"></script>
+    <script src="search.js"></script>
+    <script src="/szvy/config.js?cdn"></script>
+    <script src="js/psearch.js"></script>
+  </body>
 </html>
