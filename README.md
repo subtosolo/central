@@ -32,10 +32,10 @@ this repo is made in nodejs, which means you can only host this on a few platfor
 ## credits
 
 * [szvy](https://github.com/szvy) - the goated developer
+* [frogiee1](https://frogiee.one) - d1 helper of the site
 * [ultraviolet](https://github.com/titaniumnetwork-dev/Ultraviolet) - the entire proxy backend
 * [3kh0](https://github.com/3kh0) - a lot of game files
 * [selenite](https://gitlab.com/skysthelimit.dev/selenite) - a lot more game files
-* [frogiee1](https://frogiee.one) - nav bar + nowgg.lol owner
 * [red not sus](https://ch3n.cc) - iframe page
 
 ## license
