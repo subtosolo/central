@@ -1,7 +1,7 @@
 # Exported from Render on 2025-02-24T04:59:45Z
 services:
 - type: web
-  name: sizzlecentral
+  name: skibiditoiletmath
   runtime: node
   repo: https://github.com/szvy/central
   plan: free
