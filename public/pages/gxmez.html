@@ -60,26 +60,44 @@
 </body>
 
 <div class="buttons-here">
-    <a href="/iframe.html?url=/gxmez/stumble.html"><img class="imgbutton" src="../assets/stumble.png" alt="stumble guys"></a>
-    <a href="/iframe.html?url=/gsrc/subway/index.html"><img class="imgbutton" src="../assets/subway.png" alt="subway surfers"></a>
-    <a href="/iframe.html?url=/gxmez/superautopets.html"><img class="imgbutton" src="../assets/sap.png" alt="super auto pets"></a>
-    <a href="/iframe.html?url=/gsrc/superhot/index.html"><img class="imgbutton" src="../assets/superhot.png" alt="superhot"></a>
-    <a href="/iframe.html?url=/emulatorjs/m64/index.html"><img class="imgbutton" src="../assets/super-mario-64.png" alt="super mario 64"></a>
-    <a href="/iframe.html?url=/emulatorjs/smaw/index.html"><img class="imgbutton" src="../assets/smas.png" alt="super mario all stars"></a>
-    <a href="/iframe.html?url=/emulatorjs/smb/index.html"><img class="imgbutton" src="../assets/mario.png" alt="super mario bros"></a>
-    <a href="/iframe.html?url=/emulatorjs/smb2/index.html"><img class="imgbutton" src="../assets/super mario 2.png" alt="super mario bros 2"></a>
-    <a href="/iframe.html?url=/emulatorjs/smb3/index.html"><img class="imgbutton" src="../assets/mario 3.png" alt="super mario bros 3"></a>
-    <a href="/iframe.html?url=/emulatorjs/smw/index.html"><img class="imgbutton" src="../assets/smw.png" alt="super mario world"></a>
-    <a href="/iframe.html?url=/emulatorjs/ssb/index.html"><img class="imgbutton" src="../assets/ssb.png" alt="super smash bros"></a>
-    <a href="/iframe.html?url=/gsrc/thereisnogame/index.html"><img class="imgbutton" src="../assets/thereisnogame.png" alt="there is no game"></a>
-    <a href="/iframe.html?url=/gxmez/thebabyinyellow.html"><img class="imgbutton" src="../assets/thebabyinyellow.png" alt="the baby in yellow"></a>
-    <a href="/iframe.html?url=/emulatorjs/tetris/index.html"><img class="imgbutton" src="../assets/tetris-sq-1643414363421.jpg" alt="tetris"></a>
-    <a href="/iframe.html?url=/gxmez/triviacrack.html"><img class="imgbutton" src="../assets/triviacrack.png" alt="trivia crack"></a>
-    <a href="/iframe.html?url=/gxmez/venge.html"><img class="imgbutton" src="../assets/venge.png" alt="venge"></a>
-    <a href="/iframe.html?url=/gxmez/wolf3d.html"><img class="imgbutton" src="../assets/wolf3d.png" alt="wolfenstein 3d"></a>
-    <a href="/iframe.html?url=/gsrc/worldshardestgame/index.html"><img class="imgbutton" src="../assets/worldshardestgame.png" alt="worlds hardest game"></a>
-    <a href="/iframe.html?url=/emulatorjs/yoshi/index.html"><img class="imgbutton" src="../assets/yoshi.png" alt="yoshis island ds"></a>
+    <!-- loaded here :3 -->
 </div>
 
+ <!-- eww, a script NOT loaded from a file -->
+<script> 
+document.addEventListener("DOMContentLoaded", function () {
+  fetch('/json/gg.json')
+    .then(response => response.json())
+    .then(data => {
+      const container = document.querySelector('.buttons-here');
+
+      if (!container) {
+        console.error('elements not found');
+        return;
+      }
+
+      data.sort((a, b) => a.alt.localeCompare(b.alt));
+
+      data.forEach(item => {
+        const linkElement = document.createElement('a');
+
+        if (item.url.startsWith('/extra/') || item.url.startsWith('/noframe/')) {
+          linkElement.href = item.url;
+        } else {
+          linkElement.href = `/iframe.html?url=${encodeURIComponent(item.url)}`;
+        }
+
+        const imgElement = document.createElement('img');
+        imgElement.className = 'imgbutton';
+        imgElement.src = item.img;
+        imgElement.alt = item.alt;
+
+        linkElement.appendChild(imgElement);
+        container.appendChild(linkElement);
+      });
+    })
+    .catch(error => console.error('error fetching the jason file:', error));
+});
+</script>
 
 </html>

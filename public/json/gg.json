@@ -710,58 +710,93 @@
     "alt": "stumble guys"
   },
   {
-    "url": "/gsrc/1/index.html",
-    "img": "/assets/1game.png",
-    "alt": "1"
+    "url": "/gsrc/subway/index.html",
+    "img": "/assets/subway.png",
+    "alt": "subway surfers"
   },
   {
-    "url": "/gsrc/1/index.html",
-    "img": "/assets/1game.png",
-    "alt": "1"
+    "url": "/gxmez/superautopets.html",
+    "img": "/assets/sap.png",
+    "alt": "super auto pets"
   },
   {
-    "url": "/gsrc/1/index.html",
-    "img": "/assets/1game.png",
-    "alt": "1"
+    "url": "/gsrc/superhot/index.html",
+    "img": "/assets/superhot.png",
+    "alt": "superhot"
   },
   {
-    "url": "/gsrc/1/index.html",
-    "img": "/assets/1game.png",
-    "alt": "1"
+    "url": "/emulatorjs/m64/index.html",
+    "img": "/assets/super-mario-64.png",
+    "alt": "super mario 64"
   },
   {
-    "url": "/gsrc/1/index.html",
-    "img": "/assets/1game.png",
-    "alt": "1"
+    "url": "/emulatorjs/smaw/index.html",
+    "img": "/assets/smas.png",
+    "alt": "super mario all stars"
   },
   {
-    "url": "/gsrc/1/index.html",
-    "img": "/assets/1game.png",
-    "alt": "1"
+    "url": "/emulatorjs/smb/index.html",
+    "img": "/assets/mario.png",
+    "alt": "super mario bros"
   },
   {
-    "url": "/gsrc/1/index.html",
-    "img": "/assets/1game.png",
-    "alt": "1"
+    "url": "/emulatorjs/smb2/index.html",
+    "img": "/assets/super mario 2.png",
+    "alt": "super mario bros 2"
   },
   {
-    "url": "/gsrc/1/index.html",
-    "img": "/assets/1game.png",
-    "alt": "1"
+    "url": "/emulatorjs/smb3/index.html",
+    "img": "/assets/mario 3.png",
+    "alt": "super mario bros 3"
   },
   {
-    "url": "/gsrc/1/index.html",
-    "img": "/assets/1game.png",
-    "alt": "1"
+    "url": "/emulatorjs/smw/index.html",
+    "img": "/assets/smw.png",
+    "alt": "super mario world"
   },
   {
-    "url": "/gsrc/1/index.html",
-    "img": "/assets/1game.png",
-    "alt": "1"
+    "url": "/emulatorjs/ssb/index.html",
+    "img": "/assets/ssb.png",
+    "alt": "super smash bros"
   },
   {
-    "url": "/gsrc/1/index.html",
-    "img": "/assets/1game.png",
-    "alt": "1"
+    "url": "/gsrc/thereisnogame/index.html",
+    "img": "/assets/thereisnogame.png",
+    "alt": "there is no game"
+  },
+  {
+    "url": "/gxmez/thebabyinyellow.html",
+    "img": "/assets/thebabyinyellow.png",
+    "alt": "the baby in yellow"
+  },
+  {
+    "url": "/emulatorjs/tetris/index.html",
+    "img": "/assets/tetris-sq-1643414363421.jpg",
+    "alt": "tetris"
+  },
+  {
+    "url": "/gxmez/triviacrack.html",
+    "img": "/assets/triviacrack.png",
+    "alt": "trivia crack"
+  },
+  {
+    "url": "/gxmez/venge.html",
+    "img": "/assets/venge.png",
+    "alt": "venge"
+  },
+  {
+    "url": "/gsrc/wolf3d/index.html",
+    "img": "/assets/wolf3d.png",
+    "alt": "wolfenstein 3d"
+  },
+  {
+    "url": "/gsrc/worldshardestgame/index.html",
+    "img": "/assets/worldshardestgame.png",
+    "alt": "worlds hardest game"
+  },
+  {
+    "url": "/emulatorjs/yoshi/index.html",
+    "img": "/assets/yoshi.png",
+    "alt": "yoshis island ds"
   }
 ]
