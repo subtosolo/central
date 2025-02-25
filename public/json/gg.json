@@ -560,19 +560,94 @@
     "alt": "pacman"
   },
   {
-    "url": "/gsrc/1/index.html",
-    "img": "/assets/1game.png",
-    "alt": "1"
+    "url": "/gsrc/papaspizzeria/index.html",
+    "img": "/assets/pizza.png",
+    "alt": "papa's pizzeria"
   },
   {
-    "url": "/gsrc/1/index.html",
-    "img": "/assets/1game.png",
-    "alt": "1"
+    "url": "/gsrc/papasbakeria/index.html",
+    "img": "/gsrc/papasbakeria/papasbakeria.png",
+    "alt": "papa's bakeria"
   },
   {
-    "url": "/gsrc/1/index.html",
-    "img": "/assets/1game.png",
-    "alt": "1"
+    "url": "/gsrc/papasburgeria/index.html",
+    "img": "/gsrc/papasburgeria/images.jpeg",
+    "alt": "papa's burgeria"
+  },
+  {
+    "url": "/gsrc/papascheeseria/index.html",
+    "img": "/gsrc/papascheeseria/papascheeseria.png",
+    "alt": "papa's cheeseria"
+  },
+  {
+    "url": "/gsrc/papasdonuteria/index.html",
+    "img": "/gsrc/papasdonuteria/papasdonuteria.png",
+    "alt": "papa's donuteria"
+  },
+  {
+    "url": "/gsrc/papasfreezeria/index.html",
+    "img": "/gsrc/papasfreezeria/images.jpeg",
+    "alt": "papa's freezeria"
+  },
+  {
+    "url": "/gsrc/papaspancakeria/index.html",
+    "img": "/gsrc/papaspancakeria/papaspancakeria.png",
+    "alt": "papa's pancakeria"
+  },
+  {
+    "url": "/gsrc/papaspastaria/index.html",
+    "img": "/gsrc/papaspastaria/papaspastaria.png",
+    "alt": "papa's pastaria"
+  },
+  {
+    "url": "/gsrc/papasscooperia/index.html",
+    "img": "/gsrc/papasscooperia/papasscooperia.png",
+    "alt": "papa's scooperia"
+  },
+  {
+    "url": "/gsrc/papassushiria/index.html",
+    "img": "/gsrc/papassushiria/papassushiria.png",
+    "alt": "papa's sushiria"
+  },
+  {
+    "url": "/gsrc/papastacomia/index.html",
+    "img": "/gsrc/papastacomia/papastacomia.png",
+    "alt": "papa's tacomia"
+  },
+  {
+    "url": "/gsrc/papaswingeria/index.html",
+    "img": "/gsrc/papaswingeria/papaswingeria.png",
+    "alt": "papa's wingeria"
+  },
+  {
+    "url": "/gsrc/retrobowl/index.html",
+    "img": "/assets/retrobowll.png",
+    "alt": "retrobowl"
+  },
+  {
+    "url": "/gsrc/retrobowlcollege/index.html",
+    "img": "/assets/retrobowlcollege.png",
+    "alt": "retrobowl college"
+  },
+  {
+    "url": "/gxmez/roblox.html",
+    "img": "/assets/roblox.png",
+    "alt": "roblox"
+  },
+  {
+    "url": "/gsrc/run3/index.html",
+    "img": "/assets/run3.png",
+    "alt": "run 3"
+  },
+  {
+    "url": "/gxmez/sims.html",
+    "img": "/assets/sims.png",
+    "alt": "the sims"
+  },
+  {
+    "url": "/gsrc/slope/index.html",
+    "img": "/assets/slope.png",
+    "alt": "slope"
   },
   {
     "url": "/gsrc/1/index.html",
