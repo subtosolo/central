@@ -545,19 +545,19 @@
     "alt": "pokemon pearl"
   },
   {
-    "url": "/gsrc/1/index.html",
-    "img": "/assets/1game.png",
-    "alt": "1"
+    "url": "/gsrc/osu/index.html",
+    "img": "/assets/osu.png",
+    "alt": "osu"
   },
   {
-    "url": "/gsrc/1/index.html",
-    "img": "/assets/1game.png",
-    "alt": "1"
+    "url": "/gsrc/ovo/index.html",
+    "img": "/assets/ovo.png",
+    "alt": "ovo"
   },
   {
-    "url": "/gsrc/1/index.html",
-    "img": "/assets/1game.png",
-    "alt": "1"
+    "url": "/gsrc/pacman/index.html",
+    "img": "/assets/pacman.png",
+    "alt": "pacman"
   },
   {
     "url": "/gsrc/1/index.html",
