@@ -233,8 +233,8 @@
 }
 
 @media screen and (max-width: 1024px) {
-    #gameframe {
-        bottom: 100px;
+    #gameframe .gameDisplay .game .options {
+        height: 500px;
     }
 }
 
