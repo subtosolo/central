@@ -362,9 +362,9 @@ label[for="faviconDropdown"] {
   padding: 10px 20px;
   background-color: #35070d;
   position: fixed;
-  width: 85%;
+  width: 35vw;
   top: 0;
-  left: 6%;
+  left: 30%;
   z-index: 9999;
   border-bottom-left-radius: 17px;
   border-bottom-right-radius: 17px;
@@ -384,27 +384,27 @@ label[for="faviconDropdown"] {
   margin-left: 8px;
 }
 
-.navbar .nav-right {
+.navbar {
   display: flex;
   align-items: center;
   margin-right: 65px; 
 }
 
-.navbar .nav-right a {
+.navbar a {
   color: white;
   text-decoration: none;
   margin-left: 20px;
   display: flex;
   align-items: center;
-  font-size: 23px;
+  font-size: 26px;
   transition: all 0.2s ease-in-out;
 }
 
-.navbar .nav-right a i {
+.navbar a i {
   margin-right: 8px;
 }
 
-.navbar .nav-right a:hover {
+.navbar a:hover {
   color: #ff9bcb;
 }
 
