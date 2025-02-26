@@ -362,9 +362,9 @@ label[for="faviconDropdown"] {
   padding: 10px 20px;
   background-color: #35070d;
   position: fixed;
-  width: 35vw;
+  width: 40%;
   top: 0;
-  left: 30%;
+  left: 28%;
   z-index: 9999;
   border-bottom-left-radius: 17px;
   border-bottom-right-radius: 17px;
