@@ -7,7 +7,6 @@
 }
 
 body {
-    background-color: #0d0d0d;
     color: #f0f0f0;
     display: flex;
     justify-content: center;
@@ -17,7 +16,7 @@ body {
 
 .chat-wrapper {
     width: 700px;
-    background-color: #1c1c1e;
+    background-color: #250307;
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
@@ -28,7 +27,7 @@ header {
     display: flex;
     align-items: center;
     padding: 15px;
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid #42060d;
 }
 
 .profile-pic {
@@ -72,7 +71,7 @@ header {
 
 .message.user {
     align-self: flex-end;
-    background-color: #333;
+    background-color: #250307;
     color: #fff;
     border-radius: 15px 15px 0 15px;
 }
@@ -92,14 +91,14 @@ header {
     display: flex;
     align-items: center;
     padding: 15px;
-    border-top: 1px solid #333;
-    background-color: #1c1c1e;
+    border-top: 1px solid #42060d;
+    background-color: #250307;
     font-family: 'Poppins', sans-serif;
 }
 
 #user-input {
     flex: 1;
-    background-color: #333;
+    background-color: #611921;
     color: #f0f0f0;
     border: none;
     border-radius: 8px;
@@ -116,7 +115,7 @@ header {
 }
 
 #send-button {
-    background-color: #4a4a4a;
+    background-color: #611921;
     color: #f0f0f0;
     border: none;
     padding: 10px 15px;
@@ -127,7 +126,7 @@ header {
 }
 
 #send-button:hover {
-    background-color: #666;
+    background-color: #801f2b;
 }
 
 pre {
