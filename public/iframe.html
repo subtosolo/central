@@ -76,7 +76,6 @@
             </script>
             <script type="text/javascript" src="//www.highperformanceformat.com/14f61bd7fa8590f4dff27bb8fd542726/invoke.js"></script>
         </ins>
-        <div class="adtext">Advertisement</div>
     </div>
 
     <div class="bottom-addisplay" id="bottomAddisplay">
@@ -92,7 +91,6 @@
             </script>
             <script type="text/javascript" src="//www.highperformanceformat.com/f74869d25a130f1e8549993d086f1f9b/invoke.js"></script>
         </ins>
-        <div class="adtext">Advertisement</div>
     </div>
 
     <script>
@@ -119,9 +117,15 @@
                 const urlValue = getUrlParameter('url');
                 if (!urlValue) return;
     
-                const response = await fetch('/json/gg.json');
-                const data = await response.json();
-                const game = data.find(game => game.url === urlValue);
+                let response = await fetch('/json/gg.json');
+                let data = await response.json();
+                let game = data.find(game => game.url === urlValue);
+    
+                if (!game) {
+                    response = await fetch('/json/tstststststststststststststststststststststststs.json');
+                    data = await response.json();
+                    game = data.find(game => game.url === urlValue);
+                }
     
                 if (game && game.alt) {
                     document.getElementById("titletext").textContent = game.alt;
@@ -138,6 +142,7 @@
             fetchGameData();
         }
     </script>
+    
     
     <script type='text/javascript' src='//pl24893363.effectiveratecpm.com/e1/78/e8/e178e83d8a9f1f2aed9465374abd00ab.js'></script>
 </body>
