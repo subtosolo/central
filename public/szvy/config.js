@@ -3,8 +3,8 @@
 self.__uv$config = {
   prefix: "/szvy/szvy/",
   bare: "/bare/",
-  encodeUrl: Ultraviolet.codec.base64.encode,
-  decodeUrl: Ultraviolet.codec.base64.decode,
+  encodeUrl: Ultraviolet.codec.xor.encode,
+  decodeUrl: Ultraviolet.codec.xor.decode,
   handler: "/szvy/handler.js",
   client: "/szvy/client.js",
   bundle: "/szvy/bundle.js",
