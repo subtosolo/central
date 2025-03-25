@@ -227,12 +227,13 @@
 }
 
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1080px) {
     #gameframe .gameDisplay .game .options {
         height: 500px;
     }
     .bottom-addisplay {
         left: 40%;
+        bottom: 1%;
     }
     .addisplay {
         left: 2%;
