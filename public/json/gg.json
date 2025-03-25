@@ -130,11 +130,6 @@
     "alt": "buckshot roulette"
   },
   {
-    "url": "/gxmez/cod.html",
-    "img": "/assets/cod.png",
-    "alt": "call of duty"
-  },
-  {
     "url": "/gsrc/celeste/index.html",
     "img": "/assets/celeste.png",
     "alt": "celeste"
@@ -502,7 +497,7 @@
   {
     "url": "/gsrc/nzp/index.html",
     "img": "/assets/nzp.png",
-    "alt": "nz portable"
+    "alt": "call of duty: nazi zombies"
   },
   {
     "url": "/emulatorjs/nsmb/index.html",
@@ -798,5 +793,85 @@
     "url": "/emulatorjs/yoshi/index.html",
     "img": "/assets/yoshi.png",
     "alt": "yoshis island ds"
+  },
+  {
+    "url": "/gsrc/FEEDVID/index.html",
+    "img": "/assets/feedvid.png",
+    "alt": "feedvid live"
+  },
+  {
+    "url": "/gsrc/tanukisunset/index.html",
+    "img": "/assets/tanuki.png",
+    "alt": "tanuki sunset"
+  },
+  {
+    "url": "/gxmez/pubg.html",
+    "img": "/assets/pubg.png",
+    "alt": "pubg"
+  },
+  {
+    "url": "/gxmez/freefire.html",
+    "img": "/assets/freefire.png",
+    "alt": "freefire"
+  },
+  {
+    "url": "/gxmez/solarsmash.html",
+    "img": "/assets/solarsmash.png",
+    "alt": "solar smash"
+  },
+  {
+    "url": "/gxmez/jjkpp.html",
+    "img": "/assets/jjkpp.png",
+    "alt": "jujutsu kaisen phantom parade"
+  },
+  {
+    "url": "/gxmez/monopolygo.html",
+    "img": "/assets/monopolygo.png",
+    "alt": "monopoly go"
+  },
+  {
+    "url": "/gxmez/melonsandbox.html",
+    "img": "/assets/melonsandbox.png",
+    "alt": "melon sandbox"
+  },
+  {
+    "url": "/gxmez/poppyplaytime2.html",
+    "img": "/assets/poppyplaytime2.png",
+    "alt": "poppy playtime 2"
+  },
+  {
+    "url": "/gxmez/asphalt8.html",
+    "img": "/assets/asphalt8.png",
+    "alt": "asphalt 8"
+  },
+  {
+    "url": "/gxmez/clashofclans.html",
+    "img": "/assets/clashofclans.png",
+    "alt": "clash of clans"
+  },
+  {
+    "url": "/gxmez/clashroyale.html",
+    "img": "/assets/clashroyale.png",
+    "alt": "clash royale"
+  },
+  {
+    "url": "/gxmez/marvelsnap.html",
+    "img": "/assets/marvelsnap.png",
+    "alt": "marvel snap"
+  },
+  {
+    "url": "/gxmez/cookieruntoa.html",
+    "img": "/assets/cookieruntoa.png",
+    "alt": "cookierun: tower of adventures"
+  },
+  {
+    "url": "/gxmez/cookierunkingdom.html",
+    "img": "/assets/cookierunkingdom.png",
+    "alt": "cookierun: kingdom"
+  },
+  {
+    "url": "/gxmez/zombs.html",
+    "img": "/assets/zombsroyale.png",
+    "alt": "zombs royale"
   }
 ]
