@@ -1,5 +1,5 @@
 body {
-  background-color: #250307;
+  background-color: #030625;
 }
 
 #particles-js{
@@ -218,8 +218,8 @@ body {
   font-size: 18px;
   z-index: 9998;
   color: #ffffff;
-  background-color: #250307;
-  border: 2px solid #490714;
+  background-color: #030c25;
+  border: 2px solid #061f4d;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   font-family: notitle;
@@ -237,8 +237,8 @@ body {
 
 #searchBar:focus {
   outline: none;
-  border-color: #490714;
-  box-shadow: 0 0 10px #490714, 0 0 20px #490714;
+  border-color: #120749;
+  box-shadow: 0 0 10px #120749, 0 0 20px #120749;
   position: relative;
 }
 
@@ -251,7 +251,7 @@ body {
   font-size: 20px;
   color: #ffffff;
   background-color: #250307;
-  border: 2px solid #490714;
+  border: 2px solid #120749;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   font-family: notitle;
@@ -360,7 +360,7 @@ label[for="faviconDropdown"] {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: #35070d;
+  background-color: #070935;
   position: fixed;
   width: 40%;
   top: 0;
@@ -405,7 +405,7 @@ label[for="faviconDropdown"] {
 }
 
 .navbar a:hover {
-  color: #ff9bcb;
+  color: #00bfff;
 }
 
 #roddyrichhesbox {
@@ -525,7 +525,7 @@ label[for="faviconDropdown"] {
   width: 90px;
   height: 110px;
   border-radius: 10px;
-  background-color: #35040a;
+  background-color: #051236;
   color: white;
   font-size: 12px;
   display: flex;
